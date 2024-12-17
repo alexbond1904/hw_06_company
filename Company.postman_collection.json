@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "29bbffb1-c853-4662-85a9-86b87af21562",
+		"name": "Company",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40115088"
+	},
+	"item": [
+		{
+			"name": "All Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/company/allEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"company",
+						"allEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 4,\n    \"firstName\": \"a\",\n    \"lastName\": \"b\",\n    \"hours\": 100,\n    \"baseSalary\": 10000,\n    \"grade\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/company/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"company",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/company/totalSalary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"company",
+						"totalSalary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/company/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"company",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total Salary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/company/totalSalary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"company",
+						"totalSalary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Average Salary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/company/averageSalary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"company",
+						"averageSalary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Employees With Hours Greater Than",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"hours\":2}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/company/findEmployeesWithHoursGreaterThan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"company",
+						"findEmployeesWithHoursGreaterThan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Employees With Salary Between",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"min\":0, \"max\":12000}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/company/findEmployeesWithSalaryBetween",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"company",
+						"findEmployeesWithSalaryBetween"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
